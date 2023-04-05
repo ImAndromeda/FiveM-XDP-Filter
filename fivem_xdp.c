@@ -7,7 +7,7 @@
 
 #define FIVEM_SERVER_IP     192.168.1.1      // Replace with the IP address of your FiveM server
 #define FIVEM_SERVER_PORT   30120           // Replace with the port number of your FiveM server
-#define RATE_LIMIT          100             // Maximum number of packets allowed per second
+#define RATE_LIMIT          13000             // Maximum number of packets allowed per second
 
 struct bpf_map_def SEC("maps") rate_limit_map = {
     .type = BPF_MAP_TYPE_PERCPU_ARRAY,
