@@ -5,7 +5,7 @@
 #include <linux/udp.h>
 #include <bpf/bpf_helpers.h>
 
-#define FIVEM_SERVER_IP     192.168.1.1      // Replace with the IP address of your FiveM server
+#define FIVEM_SERVER_IP     0x7F000001      // Use the loopback IP address if running the FiveM server locally - 0x7F000001 = 127.0.0.1
 #define FIVEM_SERVER_PORT   30120           // Replace with the port number of your FiveM server
 #define RATE_LIMIT          13000             // Maximum number of packets allowed per second
 
