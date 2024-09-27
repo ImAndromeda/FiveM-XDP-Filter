@@ -16,8 +16,10 @@ Before compiling the program, update the FIVEM_SERVER_IP and FIVEM_SERVER_PORT m
 
 1. Open the `xdp_program.c` file.
 2. Modify the following macros:
-   #define FIVEM_SERVER_IP  0x7F000001  // Replace with your server's IP in hex format (e.g., 192.168.1.1 -> 0xC0A80101 or 0x7F000001 for 172.0.0.1 (Localhost)
-   #define FIVEM_SERVER_PORT 30120      // Replace with your server's port if different
+```c
+#define FIVEM_SERVER_IP  0x7F000001  // Replace with your server's IP in hex format (e.g., 192.168.1.1 -> 0xC0A80101 or 0x7F000001 for 172.0.0.1 (Localhost)
+#define FIVEM_SERVER_PORT 30120      // Replace with your server's port if different
+```
 
 `Note: Changing the default FiveM port (30120) to something else is recommended for better security.`
 
